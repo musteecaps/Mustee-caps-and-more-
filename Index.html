@@ -3,78 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mustee Caps & More | Premium Hausa Fula</title>
+    <title>Mustee Caps & More | Premium Hausa Zanna Fula and Textiles</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #000; color: #fff; }
+        body { font-family: 'Poppins', sans-serif; background-color: #050505; color: #fff; }
         .serif { font-family: 'Playfair Display', serif; }
+        
+        /* New Custom Style for a Black & White Pattern Overlay (inspired by the cap) */
+        .bw-pattern-overlay {
+            background-image: repeating-conic-gradient(#111 0% 25%, #050505 25% 50%);
+            background-size: 20px 20px;
+            opacity: 0.2;
+        }
+
+        .gold-border { border-color: #D4AF37; }
         .gold-text { color: #D4AF37; }
-        .whatsapp-green { background-color: #25D366; }
-        .card-shadow:hover { box-shadow: 0 10px 30px rgba(212, 175, 55, 0.1); }
+        .whatsapp-green-bg { background-color: #25D366; }
+        .whatsapp-green-border { border-color: #25D366; }
+
+        /* Animation for a slight zoom on hover for product image */
+        .group:hover img {
+            transform: scale(1.05);
+        }
     </style>
 </head>
 <body class="overflow-x-hidden">
 
-    <nav class="flex justify-between items-center p-6 md:px-12 border-b border-zinc-800 bg-black/90 sticky top-0 z-50">
-        <div class="serif text-2xl font-bold tracking-tighter italic">Mustee <span class="text-xs uppercase tracking-[0.4em] not-italic block gold-text">Caps & More</span></div>
-        <a href="https://wa.me/2349034681406" class="bg-white text-black text-xs font-bold px-6 py-2 uppercase tracking-widest hover:bg-zinc-200 transition">Chat Now</a>
+    <nav class="flex justify-between items-center p-6 md:px-12 border-b border-zinc-900 bg-black/95 backdrop-blur-sm sticky top-0 z-50">
+        <div class="serif text-3xl font-bold italic tracking-tighter">Mustee <span class="text-xs uppercase tracking-[0.4em] not-italic block gold-text">Caps & More</span></div>
+        <div class="flex items-center gap-6">
+            <a href="#store" class="text-xs font-light uppercase tracking-wider text-zinc-400 hover:text-white transition">Gallery</a>
+            <a href="https://wa.me/2349034681406" class="border border-zinc-700 text-white text-xs font-semibold px-6 py-2 uppercase tracking-widest hover:border-gold-border hover:text-gold-text transition">Contact</a>
+        </div>
     </nav>
 
-    <section class="relative h-[80vh] flex items-center justify-center text-center px-6">
-        <div class="absolute inset-0 z-0 opacity-40 bg-[url('https://images.unsplash.com/photo-1590736961959-01329662282b?q=80&w=2000&auto=format&fit=crop')] bg-cover bg-center"></div>
-        <div class="relative z-10">
-            <h1 class="serif text-5xl md:text-8xl mb-6 leading-none">Timeless <br><span class="gold-text">Tradition.</span></h1>
-            <p class="text-zinc-400 max-w-lg mx-auto text-sm md:text-base leading-relaxed mb-10 tracking-wide uppercase">Hand-stitched Hausa Caps & Premium Textiles for the modern gentleman.</p>
-            <a href="#shop" class="border border-zinc-500 px-10 py-4 text-xs tracking-[0.3em] uppercase hover:bg-white hover:text-black transition-all">Explore Catalog</a>
+    <section class="relative h-[85vh] flex items-center justify-center text-center px-6">
+        <div class="absolute inset-0 bw-pattern-overlay z-0"></div>
+        <div class="relative z-10 max-w-3xl">
+            <p class="text-[10px] uppercase tracking-[0.5em] gold-text mb-4">Traditional Craft</p>
+            <h1 class="serif text-6xl md:text-8xl mb-8 leading-none">Unrivaled <br><span class="italic gold-text">Heritage.</span></h1>
+            <p class="text-zinc-400 max-w-md mx-auto text-sm md:text-base leading-relaxed mb-12 tracking-wide font-light">Authentic Hausa Zanna Caps and Premium Textile Collection, curated for timeless elegance. Every stitch tells a story.</p>
+            <a href="#store" class="gold-text border border-zinc-700 px-10 py-5 text-xs tracking-[0.3em] uppercase hover:bg-gold-text hover:text-black transition-all">Explore the Collection</a>
         </div>
     </section>
 
-    <section id="shop" class="py-24 px-6 bg-white text-black">
-        <div class="max-w-6xl mx-auto">
-            <div class="mb-16 text-center">
-                <h2 class="serif text-4xl md:text-5xl italic mb-2">Our Signature Zanna</h2>
-                <div class="h-1 w-20 bg-[#D4AF37] mx-auto"></div>
+    <section id="store" class="py-32 px-6 bg-white text-black">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-24 border-l-4 border-gold-border pl-6">
+                <div>
+                    <h2 class="serif text-5xl md:text-6xl italic">The Zanna Masterpiece</h2>
+                    <p class="text-zinc-500 text-sm mt-3 max-w-lg">Our premier collection featuring the direct black & white geometric diamond design you provided. A true statement of Northern craftsmanship.</p>
+                </div>
+                <p class="text-zinc-400 uppercase text-xs tracking-widest mt-6 md:mt-0 font-bold">Standard Size</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <div class="relative group">
-                    <img src="https://i.ibb.co/VWV0mXv/cap-image.jpg" alt="Mustee Zanna Cap" class="w-full grayscale hover:grayscale-0 transition duration-700">
-                    <div class="absolute top-4 left-4 bg-black text-white text-[10px] px-3 py-1 uppercase tracking-widest font-bold">Premium Quality</div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div class="group relative overflow-hidden bg-zinc-100 p-2 shadow-2xl">
+                    <img src="https://i.ibb.co/VWV0mXv/cap-image.jpg" alt="Mustee Black and White Geometric Zanna Fula" class="w-full h-[600px] object-cover transition-transform duration-700 ease-in-out">
+                    <div class="absolute inset-0 bg-black/10 bw-pattern-overlay opacity-30 group-hover:opacity-10 transition"></div>
                 </div>
 
-                <div class="space-y-8">
-                    <h3 class="serif text-4xl leading-tight">Black & White <br>Geometric Diamond Fula</h3>
-                    <p class="text-zinc-600 leading-loose">This exquisite piece features the classic Hausa geometric stitch. Crafted with premium white linen and high-tensile black thread, it represents the peak of Northern Nigerian fashion. Perfectly suited for weddings, Fridays, and royal occasions.</p>
+                <div class="space-y-10">
+                    <p class="text-xs uppercase gold-text tracking-wider font-bold">Available Now</p>
+                    <h3 class="serif text-4xl md:text-5xl leading-tight">Authentic Geometric <br> Diamond Zanna Fula</h3>
+                    <p class="text-zinc-600 leading-loose max-w-md font-light">This premium Hausa cap, meticulously hand-knitted from fine cotton, features the exact geometric pattern from your request. The striking contrast of deep black thread and crisp white linen embodies a legacy of royal style, cultural pride, and unmatched quality. A must-have for every distinguished event.</p>
                     
-                    <div class="border-t border-zinc-200 pt-6">
-                        <p class="text-xs uppercase text-zinc-400 mb-2">Price Starting From</p>
-                        <p class="text-3xl font-bold italic serif tracking-tight">₦35,000</p>
+                    <div class="border-t border-zinc-200 pt-8 flex justify-between items-end">
+                        <div>
+                            <p class="text-xs uppercase text-zinc-400 mb-2">Price Starting From</p>
+                            <p class="text-3xl font-bold italic serif tracking-tight">₦35,000</p>
+                        </div>
+                        <a href="https://wa.me/2349034681406?text=Hello%20Mustee,%20I'm%20interested%20in%20ordering%20the%20Geometric%20Diamond%20Zanna%20Cap" 
+                           class="whatsapp-green-bg text-white px-8 py-4 flex items-center gap-3 font-bold uppercase tracking-widest text-xs hover:opacity-90 transition shadow-lg">
+                            Order on WhatsApp
+                        </a>
                     </div>
-
-                    <a href="https://wa.me/2349034681406?text=Hello%20Mustee,%20I%20want%20to%20order%20the%20Black%20and%20White%20Geometric%20Zanna%20Cap" 
-                       class="whatsapp-green text-white w-full py-5 flex justify-center items-center gap-3 font-bold uppercase tracking-widest text-xs hover:opacity-90 transition">
-                        Order via WhatsApp
-                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="py-20 px-6 bg-black text-center border-t border-zinc-900">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="serif text-3xl mb-8">Contact Us</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm mb-12">
-                <div class="p-8 border border-zinc-800">
-                    <p class="gold-text uppercase tracking-widest text-[10px] mb-2">WhatsApp</p>
-                    <p>+234 903 468 1406</p>
+    <footer class="py-24 px-6 bg-black text-center border-t border-zinc-900">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="serif text-4xl mb-12 italic">Direct Consultation</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm mb-16">
+                <div class="p-10 border border-zinc-800 bg-zinc-950 flex flex-col items-center gap-4">
+                    <p class="gold-text uppercase tracking-widest text-[10px]">WhatsApp Chat</p>
+                    <a href="https://wa.me/2349034681406" class="whatsapp-green-bg text-white font-semibold text-lg py-2 px-6 rounded-md hover:opacity-90 transition">+234 903 468 1406</a>
                 </div>
-                <div class="p-8 border border-zinc-800">
-                    <p class="gold-text uppercase tracking-widest text-[10px] mb-2">Email</p>
-                    <p>isahalmustapha2@gmail.com</p>
+                <div class="p-10 border border-zinc-800 bg-zinc-950 flex flex-col items-center gap-4">
+                    <p class="gold-text uppercase tracking-widest text-[10px]">Email Inquiries</p>
+                    <p class="text-lg">isahalmustapha2@gmail.com</p>
                 </div>
             </div>
-            <p class="text-[10px] text-zinc-600 uppercase tracking-[0.5em]">© 2026 Mustee Caps and More • kano, Nigeria</p>
+            <p class="text-zinc-600 font-light max-w-xl mx-auto mb-10 text-xs">Serving the culture through quality and tradition. We ship hand-crafted elegance from Abuja to the world.</p>
+            <p class="text-[10px] text-zinc-700 uppercase tracking-[0.5em]">© 2026 Mustee Caps & More • Abuja, Nigeria</p>
         </div>
     </footer>
 
